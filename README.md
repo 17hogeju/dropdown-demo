@@ -42,8 +42,6 @@ If you don't already have them, you'll need to isntall the following:
     npm start
     ```
 
-Note: There are some outdated dependencies that delay the initial build by a few seconds
-
 ## Future considerations
 
 Given the limited amount of time that I had for this assessment, I prioritized the features that were in the assignment doc. However, here are a few improvements that I thought of:
