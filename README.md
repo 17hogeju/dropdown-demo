@@ -42,9 +42,7 @@ If you don't already have them, you'll need to isntall the following:
     npm start
     ```
 
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the demo app.
-
+Note: There are some outdated dependencies that delay the initial build by a few seconds
 
 ## Future considerations
 
