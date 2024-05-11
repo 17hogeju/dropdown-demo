@@ -1,70 +1,55 @@
-# Getting Started with Create React App
+# Demo app for reusable dropdown component
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The reusable dropdown has the following features:
+- A user can open and close the dropdown menu by clicking on the dropdown button or outside the menu
+- The component supports a single selection option or multiple selected options
+- A user can select or deselect all options at once on a multiselect dropdown
+- The selected option is visible on the dropdown button when the menu is open and closed
 
-## Available Scripts
 
-In the project directory, you can run:
+This demo showcases using the same component with each configuration. It shows a table of sample data for text moderation. The user can use the first dropdown to filter data by severity level. The user can additionally use the second multiselect dropdown to filter data that matches any of the selected classes. Once the user has chosed their desired filters, they can press `Apply Filters` to see the resulting data with the filters applied.
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+This app is built using a `React` framework and is written in `JavaScript`.
 
-### `npm test`
+## Getting Started
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Follow these instructions to get a copy of the project up and running on your local machine for testing purposes.
 
-### `npm run build`
+### Prerequisites
+If you don't already have them, you'll need to isntall the following:
+- [Node.js](https://nodejs.org/en/download/current)
+- [npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Installation
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. **Clone the respository**
+    ```
+    git clone https://github.com/17hogeju/dropdown-demo
+    ```
+2. **Navigate to the project directory**
+    ```
+    cd dropdown-demo
+    ```
+3. **Install dependencies**
+    ```
+    npm install
+    ```
+4. **Run the development server**
+    ```
+    npm start
+    ```
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the demo app.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Future considerations
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Given the limited amount of time that I had for this assessment, I prioritized the features that were in the assignment doc. However, here are a few improvements that I thought of:
+- Adding test cases to ensure the behavior is correct and as intended and there are no unexpected errors.
+- Being able to pass in the data without having to transform it to an array of string beforehand.
+- Adding the index to the drop down option keys to ensure that "option a" and "option-a" do not generate the same key.
+- Adding a prop in the dropdown component that can provide an option such that the dropdown options can be of any type and not limited to single select and multi-select.
